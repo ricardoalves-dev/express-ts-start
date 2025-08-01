@@ -1,4 +1,8 @@
-# Pacotes
+# Express-TS-Start 🌐
+
+Projeto base para API's com Express
+
+## 📦 Pacotes
 
 - dotenv
 - express/@types/express
@@ -9,12 +13,12 @@
 - @types/node
 - tsx
 
-# Rotas
+## 🔀 Rotas
 
 - /ping: rota de teste que deve retornar pong
 - /health: rota para teste de saúde da API
 
-# Middlewares
+## 🧩 Middlewares
 
 - express.json()
 - helmet()
