@@ -13,7 +13,6 @@ export class ApiResponseMiddleware implements IAppMiddleware {
       if (Array.isArray(body)) return originalSend(new ApiResponse<any[]>(body));
       if (typeof body === 'object' && body !== null) return originalSend(new ApiResponse<object>(body));
 
-      console.log(typeof body, body);
       return originalSend(body);
     }
 
