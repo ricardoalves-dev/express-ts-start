@@ -8,6 +8,7 @@ import { PingPongController } from "modules/ping-pong/PingPongController";
 import { ErrorHandlerMiddleware } from "@core/middlewares/ErrorHandlerMiddleware";
 import { HealthRouter } from "modules/health/HealthRouter";
 import { HealthController } from "modules/health/HealthController";
+import { RequestLoggerMiddleware } from "@core/middlewares/RequestLoggerMiddleware";
 
 new App()
   .start(process.env.PORT && !Number.isNaN(process.env.PORT) ? parseInt(process.env.PORT) : 8080)
@@ -15,7 +16,8 @@ new App()
     [
       new BodyParserMiddleware(),
       new HelmetMiddleware(),
-      new ApiResponseMiddleware()
+      new ApiResponseMiddleware(),
+      new RequestLoggerMiddleware()
     ]
   )
   .registerRoutes(
