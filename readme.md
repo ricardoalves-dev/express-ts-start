@@ -4,14 +4,22 @@ Projeto base para API's com Express
 
 ## 📦 Pacotes
 
+### Produção
 - dotenv
-- express/@types/express
+- express
 - helmet
 - typescript
 - zod
-- jest/@types/jest
+
+### Dev
+- @eslint/js
+- @types/express
+- @types/jest
 - @types/node
+- eslint
+- jest
 - tsx
+- typescript-eslint
 
 ## 🔀 Rotas
 
