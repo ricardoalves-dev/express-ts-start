@@ -17,6 +17,7 @@ Projeto base para API's com Express
 - @types/jest
 - @types/node
 - eslint
+- eslint-plugin-import
 - jest
 - tsx
 - typescript-eslint
