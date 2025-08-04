@@ -1,5 +1,5 @@
-import express, { Application, ErrorRequestHandler, RequestHandler } from "express";
-import { Logger } from "./logger/Logger";
+import express, { Application, ErrorRequestHandler, RequestHandler } from 'express';
+import { Logger } from './logger/Logger';
 
 export interface IAppMiddleware {
   name: string,
@@ -13,12 +13,12 @@ export interface IAppErrorHandlerMiddleware {
 
 export interface IAppRoute {
   uri: string;
-  router: express.Router
+  router: express.Router;
 }
 
 export class App {
   private app: Application;
-  private logger = new Logger(App)
+  private logger = new Logger(App);
 
   constructor() {
     this.app = express();

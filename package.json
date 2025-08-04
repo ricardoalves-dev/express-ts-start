@@ -24,6 +24,7 @@
     "@types/jest": "^30.0.0",
     "@types/node": "^24.1.0",
     "eslint": "^9.32.0",
+    "eslint-plugin-import": "^2.32.0",
     "jest": "^30.0.5",
     "tsx": "^4.20.3",
     "typescript-eslint": "^8.38.0"

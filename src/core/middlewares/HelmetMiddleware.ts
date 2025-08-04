@@ -1,5 +1,5 @@
-import { IAppMiddleware } from "../app";
-import helmet from "helmet";
+import { IAppMiddleware } from '../app';
+import helmet from 'helmet';
 
 export class HelmetMiddleware implements IAppMiddleware {
   name = 'Helmet';

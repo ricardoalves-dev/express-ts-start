@@ -1,6 +1,6 @@
-import { IAppRoute } from "@core/app";
-import { PingPongController } from "./PingPongController";
-import { Router } from "express";
+import { IAppRoute } from '@core/app';
+import { PingPongController } from './PingPongController';
+import { Router } from 'express';
 import express from 'express';
 
 export class PingPongRouter implements IAppRoute {

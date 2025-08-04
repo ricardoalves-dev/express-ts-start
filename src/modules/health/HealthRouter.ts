@@ -1,6 +1,6 @@
-import { HealthController } from "./HealthController";
-import express from "express";
-import { IAppRoute } from "@core/app";
+import { HealthController } from './HealthController';
+import express from 'express';
+import { IAppRoute } from '@core/app';
 
 export class HealthRouter implements IAppRoute {
   readonly uri: string = '/health';

@@ -1,6 +1,6 @@
-import { IAppMiddleware } from "@core/app";
-import { Request, Response, NextFunction, RequestHandler } from "express";
-import { Logger } from "@core/logger/Logger";
+import { IAppMiddleware } from '@core/app';
+import { Request, Response, NextFunction, RequestHandler } from 'express';
+import { Logger } from '@core/logger/Logger';
 
 export class RequestLoggerMiddleware implements IAppMiddleware {
   private logger = new Logger(RequestLoggerMiddleware);
@@ -23,5 +23,5 @@ export class RequestLoggerMiddleware implements IAppMiddleware {
     });
 
     next();
-  }
+  };
 }

@@ -1,7 +1,7 @@
-import { ApiResponse } from "@core/api-response/ApiResponse";
-import { ApiResponseError } from "@core/api-response/ApiResponseError";
-import { IAppMiddleware } from "@core/app";
-import { Request, Response, NextFunction, RequestHandler } from "express";
+import { ApiResponse } from '@core/api-response/ApiResponse';
+import { ApiResponseError } from '@core/api-response/ApiResponseError';
+import { IAppMiddleware } from '@core/app';
+import { Request, Response, NextFunction, RequestHandler } from 'express';
 
 export class ApiResponseMiddleware implements IAppMiddleware {
   name: string = 'ApiResponseMiddleware';
@@ -14,8 +14,8 @@ export class ApiResponseMiddleware implements IAppMiddleware {
       if (typeof body === 'object' && body !== null) return originalSend(new ApiResponse<object>(body));
 
       return originalSend(body);
-    }
+    };
 
     next();
-  }
+  };
 }
