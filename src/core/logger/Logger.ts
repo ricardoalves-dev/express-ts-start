@@ -1,6 +1,6 @@
 export class Logger {
 
-  public constructor(readonly loggerClass: new () => any) { }
+  public constructor(readonly loggerClass: new () => unknown) { }
 
   public info(message: string) {
     console.info(`INFO [${this.loggerClass.name}] ${message}`);

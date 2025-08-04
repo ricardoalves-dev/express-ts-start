@@ -10,7 +10,7 @@ export class ApiResponseMiddleware implements IAppMiddleware {
     res.send = (body: unknown): Response => {
 
       if (body instanceof ApiResponse || body instanceof ApiResponseError) return originalSend(body);
-      if (Array.isArray(body)) return originalSend(new ApiResponse<any[]>(body));
+      if (Array.isArray(body)) return originalSend(new ApiResponse<unknown[]>(body));
       if (typeof body === 'object' && body !== null) return originalSend(new ApiResponse<object>(body));
 
       return originalSend(body);
