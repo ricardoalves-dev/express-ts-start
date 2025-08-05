@@ -31,6 +31,19 @@ Projeto base para API's com Express
 
 - express.json()
 - helmet()
-- ApiResponseMiddleware: Middleware que encapsula respostas da API para padronizar no formato { data: object/object[], numberOfRecords: number}
-- ErrorHandlerMiddleware: Middleware para captura de exceções da aplicação. Padroniza a resposta como { message: string, name: string, stack: string }. Deve ser melhorado para tratar exceções específicas da aplicação.
+- ApiResponseMiddleware: Middleware que encapsula respostas da API para padronizar no formato abaixo
+```json
+{
+  data: object | object[],
+  numberOfRecords: number
+}
+```
+- ErrorHandlerMiddleware: Middleware para captura de exceções da aplicação e padronização de respostas de erro no formato abaixo
+```json
+{
+  message: string,
+  name: string,
+  stack: string
+}
+```   
 - RequestLoggerMiddleware: Middleware para registrar informações acerca da requisição e resposta
